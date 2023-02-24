@@ -1,6 +1,6 @@
 {
   "name": "@musy/shared-types",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "main": "dist/musy-shared-types.cjs.js",
   "module": "dist/musy-shared-types.esm.js",
   "devDependencies": {
