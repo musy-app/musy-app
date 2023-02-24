@@ -1,5 +1,5 @@
 {
-  "name": "@musy/shared-types",
+  "name": "@musy-app/shared-types",
   "version": "1.0.0",
   "main": "dist/musy-shared-types.cjs.js",
   "module": "dist/musy-shared-types.esm.js",
