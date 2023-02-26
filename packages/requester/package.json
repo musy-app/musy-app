@@ -1,0 +1,23 @@
+{
+  "name": "@musy-app/requester",
+  "version": "0.0.1",
+  "main": "dist/musy-app-requester.cjs.js",
+  "module": "dist/musy-app-requester.esm.js",
+  "peerDependencies": {
+    "axios": ">=1.x.x"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "axios": "^1.3.4",
+    "typescript": "^4.9.3"
+  },
+  "preconstruct": {
+    "entrypoints": [
+      "index.ts"
+    ]
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": "https://github.com/musy-app/musy-app/tree/master/packages/requester"
+}

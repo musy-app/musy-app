@@ -10,6 +10,7 @@ export interface User {
   password: string;
   role: UserRole;
   identity: UserIdentity;
+  gameProfile: GameProfile;
   addresses: Location[];
   preferences: UserPreferences;
   connections: UserConnection[];
@@ -36,6 +37,10 @@ export interface UserIdentity {
   fullName: string;
   profilePictureUrl?: string;
   birthDate: Date;
+}
+
+export interface GameProfile {
+  userName: string;
 }
 
 export interface UserPreferences {
