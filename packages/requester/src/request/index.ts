@@ -1,6 +1,6 @@
 import axios, { AxiosRequestConfig } from "axios";
 
-import { APIResponse } from "../types";
+import { APIError, APIResponse } from "../types";
 
 type ApiRequestConfig = AxiosRequestConfig;
 
@@ -15,7 +15,7 @@ const createAuthHeaders = () => ({
 });
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export const request = async <TData = any>(
+const request = async <TData = any>(
   url: string,
   options?: ApiRequestConfig
 ): Promise<APIResponse<TData>> => {
@@ -29,10 +29,19 @@ export const request = async <TData = any>(
     },
   };
 
-  const response = await axios.request<TData>({
-    url,
-    ...options,
-  });
+  const response = axios
+    .request<APIResponse<TData>>({
+      url,
+      ...options,
+    })
+    .then((response) => {
+      return response.data;
+    })
+    .catch((error: APIError) => {
+      throw error;
+    });
 
-  return response.data as APIResponse<TData>;
+  return response;
 };
+
+export default request;
