@@ -1,5 +1,11 @@
 # @musy/shared-types
 
+## 1.2.0
+
+### Minor Changes
+
+- 85517f4: Add APIResponse and APIError to Shared-Types
+
 ## 1.1.0
 
 ### Minor Changes
