@@ -23,11 +23,11 @@ module.exports = [
     modifyWebpackConfig,
   },
   {
-    path: "packages/shared-types/next/dist/musy-app-shared-types.cjs.prod.js",
+    path: "packages/shared-types/dist/musy-app-shared-types.cjs.prod.js",
     modifyWebpackConfig,
   },
   {
-    path: "packages/shared-types/next/dist/musy-app-shared-types.esm.js",
+    path: "packages/shared-types/dist/musy-app-shared-types.esm.js",
     modifyWebpackConfig,
   },
 ];
