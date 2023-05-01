@@ -1,6 +1,6 @@
 import axios, { AxiosRequestConfig } from "axios";
 
-import { APIError, APIResponse } from "../types";
+import { APIResponse, APIError } from "@musy-app/shared-types";
 
 type ApiRequestConfig = AxiosRequestConfig;
 
