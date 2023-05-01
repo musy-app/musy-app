@@ -8,7 +8,7 @@
     "axios": ">=1.3.x"
   },
   "devDependencies": {
-    "@musy-app/shared-types": "workspace:^",
+    "@musy-app/shared-types": "^1.2.0",
     "axios": "^1.3.4",
     "typescript": "^4.9.3"
   },
