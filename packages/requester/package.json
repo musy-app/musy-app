@@ -5,11 +5,13 @@
   "module": "dist/musy-app-requester.esm.js",
   "peerDependencies": {
     "@musy-app/shared-types": ">=1.x.x",
-    "axios": ">=1.3.x"
+    "axios": ">=1.3.x",
+    "cookie-cutter": ">=0.2.x"
   },
   "devDependencies": {
     "@musy-app/shared-types": "^1.2.0",
     "axios": "^1.3.4",
+    "cookie-cutter": "^0.2.0",
     "typescript": "^4.9.3"
   },
   "preconstruct": {
