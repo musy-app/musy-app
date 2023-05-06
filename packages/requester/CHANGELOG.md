@@ -1,5 +1,11 @@
 # @musy-app/requester
 
+## 2.0.1
+
+### Patch Changes
+
+- a34d2fc: Add new request system
+
 ## 2.0.0
 
 ### Minor Changes
