@@ -1,13 +1,16 @@
 import { IsNotEmpty, IsObject } from "class-validator";
-import { UserIdentifier, UserIdentity } from "../../../user";
+import { UserIdentity } from "../../../user";
 
 export class SignUpUserDto {
   @IsObject()
-  identifier: UserIdentifier;
+  identifier: {
+    [key: string]: string;
+  };
 
   @IsNotEmpty()
   password: string;
 
   @IsObject()
-  identity: Partial<UserIdentity> & { firstName: string; lastName: string };
+  identity: Partial<UserIdentity> &
+    Pick<UserIdentity, "firstName" | "lastName">;
 }
