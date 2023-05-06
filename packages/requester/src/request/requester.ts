@@ -20,10 +20,10 @@ type RequestResponse = {
   delete: BaseRequest;
 };
 
-const requester = (): RequestResponse => {
+const requester = (auth = true): RequestResponse => {
   let baseOptions: ApiRequestConfig = {};
 
-  if (cookieCutter.get("access_token")) {
+  if (auth && cookieCutter.get("access_token")) {
     const jwtToken = cookieCutter.get("access_token");
 
     baseOptions = {
@@ -70,4 +70,4 @@ const requester = (): RequestResponse => {
   };
 };
 
-export default requester;
+export { requester };
