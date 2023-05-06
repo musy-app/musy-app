@@ -1,5 +1,12 @@
 # @musy-app/requester
 
+## 3.0.2
+
+### Patch Changes
+
+- Updated dependencies [220002b]
+  - @musy-app/shared-types@1.3.2
+
 ## 3.0.1
 
 ### Patch Changes
