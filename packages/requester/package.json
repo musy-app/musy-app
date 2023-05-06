@@ -1,6 +1,6 @@
 {
   "name": "@musy-app/requester",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "main": "dist/musy-app-requester.cjs.js",
   "module": "dist/musy-app-requester.esm.js",
   "peerDependencies": {
