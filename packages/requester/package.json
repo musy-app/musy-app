@@ -1,15 +1,15 @@
 {
   "name": "@musy-app/requester",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "main": "dist/musy-app-requester.cjs.js",
   "module": "dist/musy-app-requester.esm.js",
   "peerDependencies": {
-    "@musy-app/shared-types": ">=1.3.1",
+    "@musy-app/shared-types": ">=1.3.2",
     "axios": ">=1.3.x",
     "cookie-cutter": ">=0.2.x"
   },
   "devDependencies": {
-    "@musy-app/shared-types": "^1.3.1",
+    "@musy-app/shared-types": "^1.3.2",
     "axios": "^1.3.4",
     "cookie-cutter": "^0.2.0",
     "typescript": "^4.9.3"

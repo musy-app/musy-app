@@ -1,5 +1,11 @@
 # @musy/shared-types
 
+## 1.3.2
+
+### Patch Changes
+
+- 220002b: Fix UserIdentifier
+
 ## 1.3.1
 
 ### Patch Changes
