@@ -1,5 +1,11 @@
 # @musy-app/requester
 
+## 2.0.2
+
+### Patch Changes
+
+- 061fbd1: Remove async from requester const
+
 ## 2.0.1
 
 ### Patch Changes
