@@ -23,8 +23,8 @@ type RequestResponse = {
 const requester = (auth = true): RequestResponse => {
   let baseOptions: ApiRequestConfig = {};
 
-  if (auth && cookieCutter.get("access_token")) {
-    const jwtToken = cookieCutter.get("access_token");
+  if (auth && cookieCutter.get("access-token")) {
+    const jwtToken = cookieCutter.get("access-token");
 
     baseOptions = {
       ...baseOptions,

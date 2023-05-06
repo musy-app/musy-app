@@ -3,22 +3,28 @@ import axios, { AxiosRequestConfig } from "axios";
 
 type ApiRequestConfig = Exclude<AxiosRequestConfig, "method">;
 
-const createApiUrl = (url: string): string => {
-  return `${process.env.NEXT_PUBLIC_API_PATH}${url}`;
-};
+const instance = axios.create({
+  baseURL: process.env.NEXT_PUBLIC_API_PATH,
+  headers: {
+    "Content-Type": "application/json",
+    Accept: "application/json",
+  },
+  timeout: 6000,
+  transformRequest: [
+    function (data) {
+      return JSON.stringify(data);
+    },
+  ],
+});
 
 const request = async <TData>(
   url: string,
   options?: ApiRequestConfig
 ): Promise<APIResponse<TData>> => {
-  url = createApiUrl(url);
-
-  const response = axios
-    .request<APIResponse<TData>>({
-      url,
-      ...options,
-    })
+  const response = instance<APIResponse<TData>>(url, { ...options })
     .then((response) => {
+      console.log("response", response);
+
       // - If response contains Set-Cookie headers, set cookies to browser
       if (response.headers["Set-Cookie"]) {
         const cookies = response.headers["Set-Cookie"];
