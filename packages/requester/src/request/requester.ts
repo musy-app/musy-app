@@ -20,7 +20,7 @@ type RequestResponse = {
   delete: BaseRequest;
 };
 
-const requester = async (): Promise<RequestResponse> => {
+const requester = (): RequestResponse => {
   let baseOptions: ApiRequestConfig = {};
 
   if (cookieCutter.get("access_token")) {
