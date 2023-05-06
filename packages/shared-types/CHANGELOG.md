@@ -1,5 +1,11 @@
 # @musy/shared-types
 
+## 1.3.0
+
+### Minor Changes
+
+- b499508: Add dtos types
+
 ## 1.2.0
 
 ### Minor Changes
