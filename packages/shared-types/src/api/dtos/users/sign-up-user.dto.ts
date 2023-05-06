@@ -1,11 +1,9 @@
 import { IsNotEmpty, IsObject } from "class-validator";
-import { UserIdentity } from "../../../user";
+import { UserIdentifier, UserIdentity } from "../../../user";
 
 export class SignUpUserDto {
   @IsObject()
-  identifier: {
-    [key: string]: string;
-  };
+  identifier: UserIdentifier;
 
   @IsNotEmpty()
   password: string;

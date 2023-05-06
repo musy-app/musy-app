@@ -20,10 +20,7 @@ export interface User {
 }
 
 export interface UserIdentifier {
-  [key: string]: {
-    value: string;
-    verified: boolean;
-  };
+  [key: string]: string;
 }
 
 export enum UserRole {
