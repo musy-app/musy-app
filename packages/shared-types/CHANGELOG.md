@@ -1,5 +1,11 @@
 # @musy/shared-types
 
+## 1.3.1
+
+### Patch Changes
+
+- 57d590a: Update the of identifier in dtos
+
 ## 1.3.0
 
 ### Minor Changes
