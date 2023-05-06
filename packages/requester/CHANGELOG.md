@@ -1,5 +1,11 @@
 # @musy-app/requester
 
+## 2.0.3
+
+### Patch Changes
+
+- 09f196c: Add parameter to requester
+
 ## 2.0.2
 
 ### Patch Changes
