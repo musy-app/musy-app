@@ -1,5 +1,11 @@
 # @musy-app/requester
 
+## 3.0.3
+
+### Patch Changes
+
+- 0cdbf11: Change requester config
+
 ## 3.0.2
 
 ### Patch Changes
