@@ -1,5 +1,4 @@
 import { APIResponse } from "@musy-app/shared-types";
-import * as cookieCutter from "cookie-cutter";
 import request, { ApiRequestConfig } from "./request";
 
 const createAuthHeaders = (jwtToken: string) => ({
@@ -23,14 +22,13 @@ type RequestResponse = {
 const requester = (auth = true): RequestResponse => {
   let baseOptions: ApiRequestConfig = {};
 
-  if (auth && cookieCutter.get("access-token")) {
-    const jwtToken = cookieCutter.get("access-token");
+  // - If the app is under React Native, then we don't have access to cookies so we need to pass the JWT token in the Authorization header.
+  if (auth) {
+    createAuthHeaders; // - Waiting usage
 
     baseOptions = {
       ...baseOptions,
-      headers: {
-        ...createAuthHeaders(jwtToken),
-      },
+      withCredentials: true,
     };
   }
 

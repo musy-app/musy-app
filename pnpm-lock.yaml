@@ -83,14 +83,11 @@ importers:
   packages/requester:
     devDependencies:
       '@musy-app/shared-types':
-        specifier: ^1.3.1
+        specifier: ^1.3.2
         version: link:../shared-types
       axios:
-        specifier: ^1.3.4
-        version: 1.3.4
-      cookie-cutter:
-        specifier: ^0.2.0
-        version: 0.2.0
+        specifier: ^1.4.0
+        version: 1.4.0
       typescript:
         specifier: ^4.9.3
         version: 4.9.3
@@ -1605,14 +1602,14 @@ packages:
       prettier: 2.8.8
     dev: false
 
-  /@emotion/is-prop-valid@1.2.0:
-    resolution: {integrity: sha512-3aDpDprjM0AwaxGE09bOPkNxHpBd+kA6jty3RnaEXdweX1DF1U3VQpPYb0g1IStAuK7SVQ1cy+bNBBKp4W3Fjg==}
+  /@emotion/is-prop-valid@1.2.1:
+    resolution: {integrity: sha512-61Mf7Ufx4aDxx1xlDeOm8aFFigGHE4z+0sKCa+IHCeZKiyP9RLD0Mmx7m8b9/Cf37f7NAvQOOJAbQQGVr5uERw==}
     dependencies:
-      '@emotion/memoize': 0.8.0
+      '@emotion/memoize': 0.8.1
     dev: false
 
-  /@emotion/memoize@0.8.0:
-    resolution: {integrity: sha512-G/YwXTkv7Den9mXDO7AhLWkE3q+I92B+VqAE+dYG4NGPaHZGvt3G8Q0p9vmE+sq7rTGphUbAvmQ9YpbfMQGGlA==}
+  /@emotion/memoize@0.8.1:
+    resolution: {integrity: sha512-W2P2c/VRW1/1tLox0mVUalvnWXxavmv/Oum2aPsRcoDJuob75FC3Y8FbpfLwUegRcxINtGUMPq0tFCvYNTBXNA==}
     dev: false
 
   /@emotion/stylis@0.8.5:
@@ -2540,8 +2537,8 @@ packages:
     engines: {node: '>=4'}
     dev: false
 
-  /axios@1.3.4:
-    resolution: {integrity: sha512-toYm+Bsyl6VC5wSkfkbbNB6ROv7KY93PEBBL6xyDczaIHasAiv4wPqQ/c4RjoQzipxRD2W5g21cOqQulZ7rHwQ==}
+  /axios@1.4.0:
+    resolution: {integrity: sha512-S4XCWMEmzvo64T9GfvQDOXgYRDJ/wsSZc7Jvdgx5u1sd0JwsuPLqb3SYmusag+edF6ziyMensPVqLTSc1PiSEA==}
     dependencies:
       follow-redirects: 1.15.2
       form-data: 4.0.0
@@ -2890,10 +2887,6 @@ packages:
   /convert-source-map@1.9.0:
     resolution: {integrity: sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A==}
     dev: false
-
-  /cookie-cutter@0.2.0:
-    resolution: {integrity: sha512-eVyP5liHjDMCmGlp2OD+qoin5TJlwUBRjBKN8R2yJ3ePf8xqUtqmRP6e36ipe0nBm2lTiertH6iHPOptNQzAEw==}
-    dev: true
 
   /core-js-compat@3.30.1:
     resolution: {integrity: sha512-d690npR7MC6P0gq4npTl5n2VQeNAmUrJ90n+MHiKS7W2+xno4o3F5GDEuylSdi6EJ3VssibSGXOa1r3YXD3Mhw==}
@@ -5799,7 +5792,7 @@ packages:
     dependencies:
       '@babel/helper-module-imports': 7.21.4
       '@babel/traverse': 7.21.5(supports-color@5.5.0)
-      '@emotion/is-prop-valid': 1.2.0
+      '@emotion/is-prop-valid': 1.2.1
       '@emotion/stylis': 0.8.5
       '@emotion/unitless': 0.7.5
       babel-plugin-styled-components: 2.1.1(styled-components@5.3.10)

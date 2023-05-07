@@ -22,17 +22,7 @@ const request = async <TData>(
   options?: ApiRequestConfig
 ): Promise<APIResponse<TData>> => {
   const response = instance<APIResponse<TData>>(url, { ...options })
-    .then((response) => {
-      console.log("response", response);
-
-      // - If response contains Set-Cookie headers, set cookies to browser
-      if (response.headers["Set-Cookie"]) {
-        const cookies = response.headers["Set-Cookie"];
-        console.log("cookies", cookies);
-      }
-
-      return response.data;
-    })
+    .then((response) => response.data)
     .catch((error: APIError) => {
       throw error;
     });
