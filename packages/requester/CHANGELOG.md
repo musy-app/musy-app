@@ -1,5 +1,11 @@
 # @musy-app/requester
 
+## 3.0.4
+
+### Patch Changes
+
+- 5f75df2: Fix authentication
+
 ## 3.0.3
 
 ### Patch Changes
