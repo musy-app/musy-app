@@ -54,7 +54,8 @@
     "quotes": ["error", "double"],
     "no-console": 0,
     "no-control-regex": 0,
-    "prettier/prettier": ["error", { "endOfLine": "auto" }]
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "@next/next/no-html-link-for-pages": "off"
   },
   "settings": {
     "react": {

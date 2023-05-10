@@ -1,4 +1,5 @@
 import { APIResponse } from "@musy-app/shared-types";
+
 import request, { ApiRequestConfig } from "./request";
 
 const createAuthHeaders = (jwtToken: string) => ({
