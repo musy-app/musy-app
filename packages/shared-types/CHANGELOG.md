@@ -1,5 +1,11 @@
 # @musy/shared-types
 
+## 1.3.3
+
+### Patch Changes
+
+- ea84506: Fix linter warnings
+
 ## 1.3.2
 
 ### Patch Changes
