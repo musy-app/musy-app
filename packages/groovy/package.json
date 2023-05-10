@@ -1,6 +1,6 @@
 {
   "name": "@musy-app/groovy",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Groovy is a React and React Native component and UI library for Musy",
   "main": "dist/musy-app-groovy.cjs.js",
   "module": "dist/musy-app-groovy.esm.js",
