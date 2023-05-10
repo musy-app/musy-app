@@ -31,27 +31,27 @@ module.exports = [
     modifyWebpackConfig,
   },
   {
-    path: "packages/kitchen/dist/musy-app-groovy.cjs.prod.js",
+    path: "packages/groovy/dist/musy-app-groovy.cjs.prod.js",
     modifyWebpackConfig,
   },
   {
-    path: "packages/kitchen/dist/musy-app-groovy.esm.js",
+    path: "packages/groovy/dist/musy-app-groovy.esm.js",
     modifyWebpackConfig,
   },
   {
-    path: "packages/kitchen/next/dist/musy-app-groovy-next.cjs.prod.js",
+    path: "packages/groovy/next/dist/musy-app-groovy-next.cjs.prod.js",
     modifyWebpackConfig,
   },
   {
-    path: "packages/kitchen/next/dist/musy-app-groovy-next.esm.js",
+    path: "packages/groovy/next/dist/musy-app-groovy-next.esm.js",
     modifyWebpackConfig,
   },
   {
-    path: "packages/kitchen/native/dist/musy-app-groovy-native.cjs.prod.js",
+    path: "packages/groovy/native/dist/musy-app-groovy-native.cjs.prod.js",
     modifyWebpackConfig,
   },
   {
-    path: "packages/kitchen/native/dist/musy-app-groovy-native.esm.js",
+    path: "packages/groovy/native/dist/musy-app-groovy-native.esm.js",
     modifyWebpackConfig,
   },
 ];

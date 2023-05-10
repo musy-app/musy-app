@@ -60,5 +60,9 @@
     ]
   },
   "packageManager": "pnpm@7.26.0",
-  "repository": "https://github.com/musy-app/musy-app"
+  "repository": "https://github.com/musy-app/musy-app",
+  "devDependencies": {
+    "@size-limit/webpack": "^8.2.4",
+    "@size-limit/webpack-why": "^8.2.4"
+  }
 }
