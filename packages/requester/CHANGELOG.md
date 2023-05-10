@@ -1,5 +1,13 @@
 # @musy-app/requester
 
+## 3.0.5
+
+### Patch Changes
+
+- ea84506: Fix linter warnings
+- Updated dependencies [ea84506]
+  - @musy-app/shared-types@1.3.3
+
 ## 3.0.4
 
 ### Patch Changes
