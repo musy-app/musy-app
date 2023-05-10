@@ -1,0 +1,46 @@
+{
+  "name": "@musy-app/groovy",
+  "version": "1.0.0",
+  "description": "Groovy is a React and React Native component and UI library for Musy",
+  "main": "dist/musy-app-groovy.cjs.js",
+  "module": "dist/musy-app-groovy.esm.js",
+  "react-native": "native/dist/musy-app-groovy-native.js",
+  "dependencies": {
+    "@fontsource/dm-mono": "^4.5.10",
+    "@types/react-native": "^0.70.6",
+    "react-icons": "^4.7.1",
+    "styled-components": "^5.3.6"
+  },
+  "peerDependencies": {
+    "next": ">= 13.0.0",
+    "react": ">= 16.8.0",
+    "react-dom": ">= 16.8.0"
+  },
+  "peerDependenciesMeta": {
+    "next": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "@types/styled-components": "^5.1.26",
+    "@types/styled-components-react-native": "^5.2.0",
+    "next": "^13.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-native": "^0.70.6",
+    "typescript": "^4.9.3"
+  },
+  "preconstruct": {
+    "entrypoints": [
+      "index.ts",
+      "native/index.ts",
+      "next/index.ts"
+    ]
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": "https://github.com/musy-app/musy-app/tree/master/packages/groovy"
+}

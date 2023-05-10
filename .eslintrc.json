@@ -13,7 +13,6 @@
     "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",
-  "ignorePatterns": "**/migrations/*",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -21,8 +20,30 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "plugins": ["react", "@typescript-eslint", "prettier", "simple-import-sort"],
   "rules": {
+    "simple-import-sort/imports": [
+      "error",
+      {
+        "groups": [
+          /* Style imports */
+          ["^.+\\.?(css)$"],
+
+          /* React imports */
+          ["^react", "^@?\\w"],
+
+          /* Side effect imports */
+          ["^(\\u0000|@?\\w)(/.*|$)"],
+
+          /* Parent imports. Put `..` last */
+          ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
+
+          /* Other relative imports. Put same-folder imports and `.` last */
+          ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"]
+        ]
+      }
+    ],
+    "simple-import-sort/exports": "error",
     "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }],
     "react/jsx-props-no-spreading": [0],
     "react/no-unknown-property": ["error", { "ignore": ["jsx"] }],
