@@ -1,4 +1,5 @@
 import { IsNotEmpty, IsObject } from "class-validator";
+
 import { UserIdentifier } from "../../../user";
 
 export class SignInUserDto {

@@ -12,4 +12,4 @@ type APIError = {
   errors?: string;
 };
 
-export type { APIResponse, APIError };
+export type { APIError, APIResponse };

@@ -1,4 +1,4 @@
-import { Language, Currency } from "..";
+import { Currency, Language } from "..";
 
 /**
  * @description

@@ -1,0 +1,4 @@
+{
+  "main": "dist/musy-app-groovy-next.cjs.js",
+  "module": "dist/musy-app-groovy-next.esm.js"
+}

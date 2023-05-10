@@ -1,0 +1,4 @@
+{
+  "main": "dist/musy-app-groovy-native.cjs.js",
+  "module": "dist/musy-app-groovy-native.esm.js"
+}
