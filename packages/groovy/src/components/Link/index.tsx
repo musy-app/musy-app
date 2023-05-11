@@ -1,8 +1,8 @@
 import React from "react";
 import NextLink from "next/link";
-import styled from "styled-components";
 import { UrlObject } from "url";
 
+import groovy from "../..";
 import { GroovyComponent } from "../../types";
 import isString from "../../utils/isString";
 
@@ -43,7 +43,7 @@ export type LinkProps = GroovyComponent<
   React.AnchorHTMLAttributes<HTMLAnchorElement>
 >;
 
-const Link = styled(
+const Link: React.FC<LinkProps> = groovy(
   ({
     as: Component = "a",
     href,

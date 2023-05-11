@@ -10,7 +10,7 @@ import { useTheme } from "styled-components";
 import groovy, { convertRGBtoRGBA, HashSpinner } from "../../..";
 import { GroovyComponent } from "../../../types";
 
-type Props = {
+export type Props = {
   /**
    * The button's classname.
    */
@@ -99,7 +99,7 @@ export type ButtonProps = GroovyComponent<
   React.ButtonHTMLAttributes<HTMLButtonElement>
 >;
 
-const Button = groovy(
+const Button: React.FC<ButtonProps> = groovy(
   ({
     as: Component = "button",
     type = "primary",

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useTheme, useThemeDetector } from "@musy-app/groovy";
-import { Button } from "@musy-app/groovy";
+import { Button } from "@musy-app/groovy/";
 import { NextPage } from "next";
 
 const IndexPage: NextPage = () => {

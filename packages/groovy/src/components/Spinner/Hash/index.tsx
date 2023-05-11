@@ -10,7 +10,7 @@ type Props = object;
 
 export type HashSpinnerProps = GroovyComponent<Props, SpinnerProps>;
 
-const Spinner = groovy(
+const Spinner: React.FC<HashSpinnerProps> = groovy(
   ({ color, speed = 1, size = 15, ...props }: HashSpinnerProps) => {
     const theme = useTheme();
 

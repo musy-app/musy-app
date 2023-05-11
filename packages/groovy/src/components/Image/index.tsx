@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import styled from "styled-components";
 
+import groovy from "../..";
 import withScale from "../../hoc/withScale";
 import { GroovyComponent } from "../../types";
 
@@ -15,8 +15,10 @@ export type ImageProps = GroovyComponent<
   React.ImgHTMLAttributes<HTMLImageElement>
 >;
 
-const Image = styled(({ src, alt, ...props }: ImageProps) => {
-  return <img src={src} alt={alt} draggable={false} {...props} />;
-})<ImageProps>``;
+const Image: React.FC<ImageProps> = groovy(
+  ({ src, alt, ...props }: ImageProps) => {
+    return <img src={src} alt={alt} draggable={false} {...props} />;
+  }
+)<ImageProps>``;
 
 export default withScale(Image);
