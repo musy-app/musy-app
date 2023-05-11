@@ -7,9 +7,9 @@
   "react-native": "native/dist/musy-app-groovy-native.js",
   "dependencies": {
     "@fontsource/dm-mono": "^4.5.10",
-    "@types/react-native": "^0.70.6",
-    "react-icons": "^4.7.1",
-    "styled-components": "^5.3.6"
+    "@types/react-native": "^0.70.13",
+    "react-icons": "^4.8.0",
+    "styled-components": "^5.3.10"
   },
   "peerDependencies": {
     "next": ">= 13.0.0",
@@ -22,14 +22,14 @@
     }
   },
   "devDependencies": {
-    "@types/react": "^18.0.25",
-    "@types/react-dom": "^18.0.8",
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
     "@types/styled-components": "^5.1.26",
-    "@types/styled-components-react-native": "^5.2.0",
-    "next": "^13.0.2",
+    "@types/styled-components-react-native": "^5.2.1",
+    "next": "^13.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-native": "^0.70.6",
+    "react-native": "^0.70.9",
     "typescript": "^4.9.3"
   },
   "preconstruct": {

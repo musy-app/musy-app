@@ -10,7 +10,7 @@ import useThemeDetector from "../hooks/useThemeDetector";
 import themes from "../themes";
 
 const ThemeContext = React.createContext({
-  theme: themes.dark,
+  theme: themes.light,
   // eslint-disable-next-line @typescript-eslint/no-empty-function, @typescript-eslint/no-unused-vars
   setTheme: (_theme: DefaultTheme) => {},
   storedTheme: 0,
@@ -25,8 +25,8 @@ type ThemeProviderProps = {
 
 /**
  * System: 0
- * Dark: 1
- * Light: 2
+ * Light: 1
+ * Dark: 2
  */
 
 const ThemeProvider = ({

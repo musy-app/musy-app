@@ -12,6 +12,9 @@ export type MainTheme = {
   gap: Gap;
   size: Size & {
     desktop?: Size;
+
+    // - Elements
+    button: ButtonSize;
   };
   weight: Weight;
   radius: Radius;
@@ -25,6 +28,15 @@ export type Colors = {
   background: BackgroundColors;
 
   text: TextColors;
+
+  danger: string;
+  warning: string;
+  success: string;
+  info: string;
+
+  // - Fixed
+  white: string;
+  black: string;
 };
 
 /**
@@ -73,6 +85,16 @@ export type Size = {
   normal: string;
   small: string;
   tiny: string;
+};
+
+/**
+ * ButtonSize is used for button sizes.
+ */
+export type ButtonSize = {
+  xs: string;
+  sm: string;
+  md: string;
+  lg: string;
 };
 
 /**

@@ -4,8 +4,9 @@ export type GroovyComponent<P, N = React.HTMLAttributes<any>> = {
    * The root element.
    */
   as?: React.ElementType;
+
   /**
-   * The content, duh.
+   * The content.
    */
   children?: React.ReactNode;
 } & P &

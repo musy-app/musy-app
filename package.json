@@ -1,5 +1,5 @@
 {
-  "name": "@musy/root",
+  "name": "@musy-app/root",
   "private": true,
   "workspaces": [
     "packages/*"
@@ -8,9 +8,13 @@
     "build": "turbo run build",
     "build:packages": "turbo run p:build",
     "build:docs": "turbo run build --filter=docs...",
+    "build:examples": "turbo run build --filter='./examples/*'",
+    "build:examples:next": "turbo run build --filter=next-typescript...",
     "dev": "turbo run p:watch dev --parallel --no-cache",
     "dev:packages": "turbo run p:watch",
     "dev:docs": "turbo run dev --filter=@musy-app/musy-docs",
+    "dev:examples": "turbo run dev --filter=./examples/*",
+    "dev:examples:next": "turbo run dev --filter=@musy-app/groovy-next-typescript", 
     "p:watch": "preconstruct watch",
     "p:dev": "preconstruct dev",
     "p:build": "preconstruct build",

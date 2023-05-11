@@ -21,6 +21,15 @@ const light: Theme = {
       tertiary: "",
       contrast: createColor(255, 255, 255),
     },
+
+    danger: createColor(255, 77, 77),
+    warning: createColor(255, 175, 64),
+    success: createColor(58, 227, 116),
+    info: createColor(23, 192, 235),
+
+    // - Fixed
+    white: createColor(255, 255, 255),
+    black: createColor(0, 0, 0),
   },
 };
 

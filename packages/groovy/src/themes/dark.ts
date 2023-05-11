@@ -9,18 +9,27 @@ const dark: Theme = {
     tertiary: "",
 
     background: {
-      primary: createColor(255, 255, 255),
+      primary: createColor(0, 0, 0),
       secondary: createColor(255, 255, 255, 0.2),
       tertiary: "",
-      contrast: "",
+      contrast: createColor(255, 255, 255),
     },
 
     text: {
-      primary: createColor(0, 0, 0),
+      primary: createColor(255, 255, 255),
       secondary: createColor(141, 149, 157),
       tertiary: "",
       contrast: createColor(255, 255, 255),
     },
+
+    danger: createColor(255, 77, 77),
+    warning: createColor(255, 175, 64),
+    success: createColor(58, 227, 116),
+    info: createColor(23, 192, 235),
+
+    // - Fixed
+    white: createColor(255, 255, 255),
+    black: createColor(0, 0, 0),
   },
 };
 

@@ -31,8 +31,15 @@ const main: MainTheme = {
       large: "40px",
       medium: "35px",
       normal: "20px",
-      small: "18px",
+      small: "15px",
       tiny: "12px",
+    },
+
+    button: {
+      xs: "10px",
+      sm: "12px",
+      md: "14px",
+      lg: "16px",
     },
   },
   breakpoint: {
